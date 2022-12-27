@@ -5,7 +5,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Link } from "react-router-dom";
-import './navbar.css'
+import './Navbar.scss'
 import ShoppingCart from '@mui/icons-material/ShoppingCart';
 
 const Navbar = () => {
@@ -22,34 +22,34 @@ const Navbar = () => {
             <ArrowDropDownIcon />
           </div>
           <div className='item'>
-            <Link to="/products/1"> Men </Link>
+            <Link className='link' to="/products/1"> Men </Link>
           </div>
           <div className='item'>
-            <Link to="/products/2"> Women </Link>
+            <Link className='link' to="/products/2"> Women </Link>
           </div>
           <div className='item'>
-            <Link to="/products/3"> Accessories </Link>
+            <Link className='link' to="/products/3"> Accessories </Link>
           </div>
         </div>
 
 
         <div className='center'>
-          <Link to='/'> STORE NAME/LOGO HERE </Link>
+          <Link className='link' to='/'> STORE NAME/LOGO HERE </Link>
         </div>
 
 
         <div className='right'>
           <div className='item'>
-            <Link to='/'> Homepage </Link>
+            <Link className='link' to='/'> Homepage </Link>
           </div>
           <div className='item'>
-            <Link to='/'> About </Link>
+            <Link className='link' to='/'> About </Link>
           </div>
           <div className='item'>
-            <Link to='/'> Contact Us </Link>
+            <Link className='link' to='/'> Contact Us </Link>
           </div>
           <div className='item'>
-            <Link to='/'> Stores </Link>
+            <Link className='link' to='/'> Stores </Link>
           </div>
           <div className='icons'>
             <SearchIcon />
