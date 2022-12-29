@@ -1,8 +1,22 @@
-import React from 'react';
-import ArrowCircleRightRoundedIcon from '@mui/icons-material/ArrowCircleRightRounded';
-import ArrowCircleLeftRoundedIcon from '@mui/icons-material/ArrowCircleLeftRounded';
+import React, { useState } from 'react';
+import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRounded';
+import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
+import './Slider.scss';
 
 const Slider = () => {
+
+
+    const [currentSlide, setCurrentSlide] = useState(0)
+
+    const prevSlide = () => {
+        setCurrentSlide(currentSlide === 0 ? 2 : (prev) => prev - 1);
+
+    };
+
+    const nextSlide = () => {
+        setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
+
+    };
 
     const data = [
         'https://assets0.dostuffmedia.com/uploads/aws_asset/aws_asset/8680625/63d47aef-afd0-4b7e-9e6c-9a051c2f33e5.jpg',
@@ -13,17 +27,17 @@ const Slider = () => {
 
   return (
     <div className='slider'>
-        <div className='container'>
+        <div className='container' style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
             <img src={data[0]} alt=''/>
             <img src={data[1]} alt=''/>
             <img src={data[2]} alt=''/>
         </div>
         <div className='icons'>
-            <div className='icon'>
-            <ArrowCircleLeftRoundedIcon />
+            <div className='icon' onClick={prevSlide}>
+            <ArrowBackIosRoundedIcon />
             </div>
-            <div className='icon'>
-            <ArrowCircleRightRoundedIcon />
+            <div className='icon' onClick={nextSlide}>
+            <ArrowForwardIosRoundedIcon />
             </div>
         </div>
     </div>
