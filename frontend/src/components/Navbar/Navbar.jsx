@@ -34,7 +34,7 @@ const Navbar = () => {
 
 
         <div className='center'>
-          <Link className='link' to='/'> STORE NAME/LOGO HERE </Link>
+          <Link className='link' to='/'> MSSP </Link>
         </div>
 
 
