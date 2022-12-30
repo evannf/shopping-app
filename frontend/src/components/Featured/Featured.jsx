@@ -1,7 +1,8 @@
 import React from 'react';
 import './Featured.scss';
+import Card from '../Card/Card';
 
-function Featured() {
+function Featured({type}) {
 
     const data = [
         {
@@ -39,7 +40,19 @@ function Featured() {
     ]
 
   return (
-    <div className='featured'>Featured</div>
+    <div className='featured'>
+        <div className='top'>
+            <h1>Featured {type}</h1>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel arcu metus. Etiam nulla mauris, semper at risus vitae, tempor porta felis.
+            </p>
+        </div>
+        <div className='bottom'>
+        {data.map(item => (
+            <Card item={ item } key={ item.id }/>
+        ))}
+        </div>
+    </div>
   )
 }
 
