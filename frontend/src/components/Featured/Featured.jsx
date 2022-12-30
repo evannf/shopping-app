@@ -8,15 +8,16 @@ function Featured({type}) {
         {
             id: 1,
             img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_9lOjzfDv16M1U3_u-pNkhbrIYsyDsg9cNw&usqp=CAU',
-            title: 'The Cast T-Shit (womens)',
+            img2: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuSD4AiQpyh35mw-ObAZKYuEh-6MMEg5hzQ&usqp=CAU',
+            title: 'The Cast T-Shit',
             isNew: true,
             oldPrice: 20,
             price: 16
         },
         {
             id: 2,
-            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuSD4AiQpyh35mw-ObAZKYuEh-6MMEg5hzQ&usqp=CAU',
-            title: 'The Cast T-Shit (mens)',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXoY3_gc19fokYZmp3eSSPmulE_VYp91bMRQ&usqp=CAU',
+            title: 'Slam Dunk T-Shirt',
             isNew: true,
             oldPrice: 20,
             price: 16
