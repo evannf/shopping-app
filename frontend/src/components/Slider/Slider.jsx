@@ -19,12 +19,12 @@ const Slider = () => {
     };
 
     const data = [
-        'https://assets0.dostuffmedia.com/uploads/aws_asset/aws_asset/8680625/63d47aef-afd0-4b7e-9e6c-9a051c2f33e5.jpg',
-        'https://c10.patreonusercontent.com/4/patreon-media/p/campaign/1055672/95e03cc441e144b8b3e2ba547ffb79ad/eyJ3Ijo5NjAsIndlIjoxfQ==/1.jpg?token-time=1672790400&token-hash=kJsZ6RCPFgFVWsR9zm4pWHoIXuKJutXcqT5T-QP3Tv4%3D',
-        'https://external-preview.redd.it/57hWLlhL0fUOF0tXZ1nOV-W6R7Yuc1hvqAcMBJx5kTc.jpg?format=pjpg&auto=webp&s=8b3d9b2aadf847e2cd09f100940f69094ffad44f'
+        'https://media.istockphoto.com/id/1293366109/photo/this-one-match-perfect-with-me.jpg?s=612x612&w=0&k=20&c=wJ6yYbRrDfdmoViuQkX39s2z_0lCiNQYgEtLU--0EbY=','https://media.istockphoto.com/id/1439676462/photo/portrait-of-a-smiling-businessman-standing-in-his-office-with-arms-crossed.jpg?b=1&s=170667a&w=0&k=20&c=_0rcSGxGUa2rAs9uWi7m-nP1z3iYruRbSnVLLx1upvs=',
+        'https://media.istockphoto.com/id/1396659808/photo/group-of-young-happy-successful-business-team-people-pointing-finger-up-and-smiling.jpg?s=612x612&w=0&k=20&c=x4uFh_8giCdvu0JrVQwSm843bgXW7ZfN5OhQezSJ_FQ=',
+
     ];
 
-
+    
   return (
     <div className='slider'>
         <div className='container' style={{transform: `translateX(-${currentSlide * 100}vw)`}}>

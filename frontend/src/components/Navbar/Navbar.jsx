@@ -34,7 +34,7 @@ const Navbar = () => {
 
 
         <div className='center'>
-          <Link className='link' to='/'> MSSP </Link>
+          <Link className='link' to='/'> SUCCESS + DRESS </Link>
         </div>
 
 
