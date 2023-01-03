@@ -47,7 +47,7 @@ function Categories() {
                 </div>
             </div>
             <div className='row'>
-                <img src='https://media.istockphoto.com/id/800287296/photo/putting-their-best-foot-forward.jpg?s=612x612&w=0&k=20&c=cAbElSqexAummycmI_CEO1Hc1aPceiCxrW4JT0L7J9o=' alt=''/>
+                <img className='shopAll' src='https://media.istockphoto.com/id/800287296/photo/putting-their-best-foot-forward.jpg?s=612x612&w=0&k=20&c=cAbElSqexAummycmI_CEO1Hc1aPceiCxrW4JT0L7J9o=' alt=''/>
                     <button>
                         <Link className='link' to=''>Shop All</Link>
                     </button>
