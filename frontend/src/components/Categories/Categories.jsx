@@ -9,7 +9,7 @@ function Categories() {
             <div className='row'>
                 <img src='https://media.istockphoto.com/id/515306510/photo/making-decision-on-the-move.jpg?s=612x612&w=0&k=20&c=2bKoyPS-Yfo8VymP16mLdfB3FIAsvhozT1crLqelFFQ=' alt='Men'/>
                 <button>
-                    <Link className='link' to=''>Men</Link>
+                    <Link className='link' to='/products/1'>Men</Link>
                 </button>
             </div>
             <div className='row'>
