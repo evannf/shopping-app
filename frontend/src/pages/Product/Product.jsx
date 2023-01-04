@@ -26,7 +26,7 @@ const Product = () => {
       </div>
       <div className='right'>
         <h1>Title</h1>
-        <span>$35</span>
+        <span className='price'>$35</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus ante ut varius vulputate. Vivamus ante dolor, tempus a elit vel, lacinia ornare du Duis sagittis dui vitae enim finibus tincidunt. In facilisis ex ut erat imperdiet, in volutpat lacus cursusi. Vivamus vel maximus felis. Nulla mattis egestas mollis.
         </p>
         <div className='quantity'>
@@ -51,7 +51,7 @@ const Product = () => {
           <span>Tags: Men, Blazer, Jacket, Top</span>
         </div>
         <hr />
-        <div className='details'>
+        <div className='info'>
           <span>DESCRIPTION</span>
           <hr />
           <span>ADDITIONAL INFORMATION</span>
