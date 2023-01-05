@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import './Cart.scss';
+import HighlightOffOutlinedIcon from '@mui/icons-material/HighlightOffOutlined';
 
 const Cart = () => {
     const data = [
@@ -33,10 +35,10 @@ const Cart = () => {
                 <img src={item.img} alt='' />
                 <div className='details'>
                     <h1>{item.title}</h1>
-                    <p>{item.desc.substring(0,100)}</p>
-                    <div className='price'>1 x ${item.price}</div>
+                    <p>{item.desc?.substring(0,100)}</p>
+                    <div className='price'>1 x ${item.price}</div> 
                 </div>
-
+                <HighlightOffOutlinedIcon className='delete'/>
             </div>
         ))}
         <div className='total'>
