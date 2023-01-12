@@ -3,10 +3,12 @@ import './Featured.scss';
 import Card from '../Card/Card';
 import useFetch from '../../hooks/useFetch';
 
-const Featured = ({ type }) => {
+const Featured = ({type}) => {
 
     const {data, loading, error} = useFetch(
-        `/products?populate=*`)
+        `/products?populate=*&[filters][type][$eq]=${type}`)
+
+        console.log(data)
 
   return (
     <div className='featured'>

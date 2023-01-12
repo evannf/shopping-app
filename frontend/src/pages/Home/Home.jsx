@@ -1,3 +1,4 @@
+import { ListItem } from '@mui/material';
 import React from 'react';
 import Categories from '../../components/Categories/Categories';
 import Contact from '../../components/Contact/Contact';
@@ -9,9 +10,9 @@ const Home = () => {
   return (
     <div className='home'>
       <Slider />
-      <Featured type='Featured'/>
+      <Featured type='featured'/>
       <Categories />
-      <Featured type='Most Popular'/>
+      <Featured type='trending'/>
       <Contact />
     </div>
   )
