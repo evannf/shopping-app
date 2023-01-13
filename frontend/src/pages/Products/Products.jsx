@@ -48,11 +48,11 @@ const Products = () => {
         <div className='filterItem'>
           <h2>Sort by</h2>
           <div className='inputItem'>
-            <input type="radio" id="asc" value="asc" name="price" onChange={e => setSort('asc')} />
+            <input type="radio" id="asc" value="asc" name="price" onChange={(e) => setSort('asc')} />
             <label htmlFor='asc'> Price (Lowest First) </label>
           </div>
           <div className='inputItem'>
-            <input type="radio" id="desc" value="desc" name="price" onChange={e => setSort('desc')} />
+            <input type="radio" id="desc" value="desc" name="price" onChange={(e) => setSort('desc')} />
             <label htmlFor='desc'> Price (Highest First) </label>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useState ,React } from 'react';
+import { useState , React } from 'react';
 import { useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import "./Product.scss";
@@ -27,7 +27,7 @@ const Product = () => {
           <img 
             src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img?.data?.attributes?.url} 
             alt='' 
-            onClick={e => setSelectedImg("")} />
+            onClick={e => setSelectedImg("img")} />
           <img 
             src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} 
             alt='' 
