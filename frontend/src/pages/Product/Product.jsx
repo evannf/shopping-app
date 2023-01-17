@@ -1,4 +1,4 @@
-import { useState , React } from 'react';
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 import "./Product.scss";
@@ -8,7 +8,7 @@ import BalanceIcon from '@mui/icons-material/Balance';
 
 const Product = () => {
   const id = useParams().id;
-  const [selectedImg, setSelectedImg] = useState("img");
+  const [selectedImg, setSelectedImg] = useState('img');
   const [quantitiy, setQuantitiy] = useState(1);
 
   const {data, loading, error} = useFetch(
@@ -27,21 +27,22 @@ const Product = () => {
           <img 
             src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img?.data?.attributes?.url} 
             alt='' 
-            onClick={e => setSelectedImg("img")} />
+            onClick={(e) => setSelectedImg("img")} />
           <img 
             src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} 
             alt='' 
-            onClick={e => setSelectedImg("img2")} />
+            onClick={(e) => setSelectedImg("img2")} />
         </div>
         <div className='mainImg'>
           <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes[selectedImg]?.data?.attributes?.url} alt='' />
         </div>
       </div>
       <div className='right'>
-        <h1>Title</h1>
-        <span className='price'>$35</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus ante ut varius vulputate. Vivamus ante dolor, tempus a elit vel, lacinia ornare du Duis sagittis dui vitae enim finibus tincidunt. In facilisis ex ut erat imperdiet, in volutpat lacus cursusi. Vivamus vel maximus felis. Nulla mattis egestas mollis.
-        </p>
+        <h1>{data?.attributes?.title}</h1>
+        <span className='price'>{data?.attributes?.price}</span>
+          <p>
+            {data?.attributes?.desc}
+          </p>
         <div className='quantity'>
           <button onClick={() => setQuantitiy((prev) => prev === 1 ? 1 : prev-1)}>-</button>
           {quantitiy}

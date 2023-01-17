@@ -4,12 +4,15 @@
 
 .navbar{
     height: 8opx;
+    background-color: rgba(16, 105, 199, 0.771);
+    padding: 15px;
 
     .wrapper{
         padding: 10px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+     
 
 
         .item{
@@ -35,7 +38,7 @@
             .icons{
                 display: flex;
                 gap: 15px;
-                color: #777;
+                color: lightblue;
                 cursor: pointer;
 
                 .cartIcon{
