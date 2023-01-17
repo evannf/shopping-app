@@ -1,11 +1,14 @@
 .featured{
-    margin: 100px 200px;
+    margin: 100px 20px;
 
     .top{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 50px;
+        background-color: rgba(16, 105, 199, 0.771);
+        padding-left: 100px;
+        padding-right: 100px;
 
         h1{
             flex: 2;
@@ -14,7 +17,7 @@
 
         p{
             flex: 3;
-            color: gray;
+            color: lightblue;
         }
     }
 
@@ -22,5 +25,6 @@
         display: flex;
         justify-content: center;
         gap: 50px;
+
     }
 }
