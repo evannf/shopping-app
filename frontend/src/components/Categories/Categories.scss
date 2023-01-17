@@ -3,6 +3,8 @@
     height: 60vh;
     gap: 10px;
     margin: 10px;
+    background-color: rgba(16, 105, 199, 0.771);
+    padding:14px;
 
     .col{
         flex: 1;
@@ -35,7 +37,8 @@
             margin: 15px;
             cursor: pointer;
             border: none;
-            background-color: white;
+            background-color: rgba(47, 114, 229, 0.806);
+            color: white;
             text-transform: uppercase;
             font-weight: 500;
 
