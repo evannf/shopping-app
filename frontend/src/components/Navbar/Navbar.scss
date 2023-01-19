@@ -47,6 +47,11 @@
                 color: lightblue;
                 cursor: pointer;
 
+                .icon:hover{
+                    color: navy;
+                }
+            
+
                 .cartIcon{
                     position: relative;
                     span{
@@ -63,6 +68,10 @@
                         align-items: center;
                         justify-content: center;
                     }
+                }
+
+                .cartIcon:hover{
+                    color: navy;
                 }
             }
         }

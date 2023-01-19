@@ -54,9 +54,9 @@ const Navbar = () => {
             <Link className='link' to='/'> Stores </Link>
           </div>
           <div className='icons'>
-            <SearchIcon />
-            <AccountBoxIcon />
-            <FavoriteIcon />
+            <SearchIcon className='icon' />
+            <AccountBoxIcon className='icon' />
+            <FavoriteIcon className='icon' />
             <div className='cartIcon' onClick={() => setOpen(!open)}>
               <ShoppingCart />
               <span>0</span>
