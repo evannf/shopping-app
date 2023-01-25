@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import MakeRequest from "../MakeRequest";
+import MakeRequest from "/Users/evann/Documents/Programming/shopping-app/shopping-app/frontend/src/makeRequest.js";
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);
