@@ -14,8 +14,10 @@ const Product = () => {
   const [selectedImg, setSelectedImg] = useState("img");
   const [quantitiy, setQuantitiy] = useState(1);
 
-  const dispatch = useDispatch();
+
   const { data, loading } = useFetch(`/products/${id}?populate=*`);
+  const dispatch = useDispatch(); 
+  console.log(data)
 
   return (
     <div className='product'>
@@ -72,10 +74,10 @@ const Product = () => {
             <button className='add' onClick={()=>dispatch(
               addToCart({
                 id: data.id,
-                title: data.attribites.title,
-                desc: data.attribites.desc,
-                price: data.attribites.price,
-                img: data.attribites.img.data.attribites.url,
+                title: data.attributes.title,
+                desc: data.attributes.desc,
+                price: data.attributes.price,
+                img: data.attributes.img.data.attributes.url,
                 quantitiy,
               })
             )}>
