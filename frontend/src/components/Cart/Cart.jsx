@@ -1,10 +1,13 @@
 import React from 'react';
 import './Cart.scss';
 import HighlightOffOutlinedIcon from '@mui/icons-material/HighlightOffOutlined';
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { removeItem } from '../../redux/cartReducer';
 
 const Cart = () => {
     const products = useSelector(state=>state.cart.products)
+    const dispatch = useDispatch();
+
     const totalPrice = () => {
         let total = 0;
         products.forEach((item)=> {
@@ -24,7 +27,7 @@ const Cart = () => {
                     <p>{item.desc?.substring(0,100)}</p>
                     <div className='price'>{item.quantity} x ${item.price}</div> 
                 </div>
-                <HighlightOffOutlinedIcon className='delete'/>
+                <HighlightOffOutlinedIcon className='delete' onClick={()=>dispatch(removeItem(item.id))} />
             </div>
         ))}
         <div className='total'>
