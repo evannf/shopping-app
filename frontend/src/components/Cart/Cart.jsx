@@ -3,6 +3,7 @@ import './Cart.scss';
 import HighlightOffOutlinedIcon from '@mui/icons-material/HighlightOffOutlined';
 import { useSelector, useDispatch } from "react-redux";
 import { removeItem } from '../../redux/cartReducer';
+import { resetCart } from '../../redux/cartReducer';
 
 const Cart = () => {
     const products = useSelector(state=>state.cart.products)
@@ -35,7 +36,7 @@ const Cart = () => {
             <span>${totalPrice()}</span>
         </div>
         <button>Checkout</button>
-        <span className='reset'>Reset Cart</span>
+        <span className='reset' onClick={() => dispatch(resetCart())}>Reset Cart</span>
     </div>
   )
 }
