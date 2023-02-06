@@ -9,6 +9,8 @@ Icon
 .Spotlight-V100
 .Trashes
 ._*
+# path: ./.gitignore
+package-lock.json
 
 
 ############################
