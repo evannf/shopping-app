@@ -12,8 +12,7 @@ const Featured = ({ type }) => {
       <div className='top'>
         <h1>{type} Items</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel arcu
-          metus. Etiam nulla mauris, semper at risus vitae, tempor porta felis.
+          Check out these new and {type} items from some of our favorite partners.
         </p>
       </div>
       <div className='bottom'>
